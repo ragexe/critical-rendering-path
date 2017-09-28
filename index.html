@@ -7,7 +7,58 @@
     <meta name="description" content="Critical Rendering Path Example">
     <meta name="author" content="Cameron Pittman">
     <title>Cameron Pittman: Portfolio</title>
-    <style>
+
+    <script async src="js/perfmatters.js"></script>
+</head>
+<body>
+<header class="container">
+    <div class="row">
+        <div class="col"><a href="/"><img src="img/profilepic.jpg"></a>
+            <p>Cameron Pittman<br><span>Course Developer</span></p></div>
+        <div class="col"><a href="/"><img src="img/myprofilephoto.png"></a>
+            <p>Roman Makeychik<br><span>Web performance adherent</span></p></div>
+    </div>
+    <div class="row"></div>
+</header>
+<div class="container">
+    <div class="hero"><strong>I love web development!</strong> This is a template for a simple portfolio. I decidedtouse
+        it toshowcase a few Udacity courses I've taken and some teaching work, but you can use it to showcaseanykind
+        ofproject that you want the world to see :) <br> Contact me or my follower:
+        <ul>
+            <li>me@email.com</li>
+            <li><a href="mailto: ragexeone@gmail.com">ragexeone@gmail.com</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <ul>
+            <li><img src="views/images/project-2048.png" alt="2048"><a href="project-2048.html">Build Your Own 2048!</a>
+                <p>I made my own version of 2048. How cool is that!?</p></li>
+            <li><img src="views/images/project-mobile.png" alt="Ilya Grigorik"><a href="project-webperf.html">Website
+                Performance Optimization</a>
+                <p>Hey... this class looks familiar.</p></li>
+            <li><img src="views/images/project-webperf.png" alt="Mobile devices"><a href="project-mobile.html">Mobile
+                Web Development</a>
+                <p>Making mobile apps isn't so hard after all.</p></li>
+            <li><img style="width:100px;" src="views/images/pizzeria.png" alt="Tbe best pizzeria picture"><a
+                    href="views/pizza.html">Cam's Pizzeria</a>
+                <p>Who wants a performant pizza?</p></li>
+        </ul>
+    </div>
+    <footer><p>&copy; Web Performance 2014 <span id="crp-stats"></span></p></footer>
+</div>
+<script async>(function (w, g) {
+    w['GoogleAnalyticsObject'] = g;
+    w[g] = w[g] || function () {
+        (w[g].q = w[g].q || []).push(arguments)
+    };
+    w[g].l = 1 * new Date();
+})(window, 'ga');
+ga('create', 'UA-XXXX-Y');
+ga('send', 'pageview');</script>
+<script async src="views/js/http_www.google-analytics.com_analytics.js"></script>
+</body>
+</html>
+<style>
     @font-face {
         font-family: "Open Sans";
         font-style: normal;
@@ -147,54 +198,4 @@
             padding-left: 4.5em;
         }
     }
-    </style>
-    <script async src="js/perfmatters.js"></script>
-</head>
-<body>
-<header class="container">
-    <div class="row">
-        <div class="col"><a href="/"><img src="img/profilepic.jpg"></a>
-            <p>Cameron Pittman<br><span>Course Developer</span></p></div>
-        <div class="col"><a href="/"><img src="img/myprofilephoto.png"></a>
-            <p>Roman Makeychik<br><span>Web performance adherent</span></p></div>
-    </div>
-    <div class="row"></div>
-</header>
-<div class="container">
-    <div class="hero"><strong>I love web development!</strong> This is a template for a simple portfolio. I decidedtouse
-        it toshowcase a few Udacity courses I've taken and some teaching work, but you can use it to showcaseanykind
-        ofproject that you want the world to see :) <br> Contact me or my follower:
-        <ul>
-            <li>me@email.com</li>
-            <li><a href="mailto: ragexeone@gmail.com">ragexeone@gmail.com</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <ul>
-            <li><img src="views/images/project-2048.png" alt="2048"><a href="project-2048.html">Build Your Own 2048!</a>
-                <p>I made my own version of 2048. How cool is that!?</p></li>
-            <li><img src="views/images/project-mobile.png" alt="Ilya Grigorik"><a href="project-webperf.html">Website
-                Performance Optimization</a>
-                <p>Hey... this class looks familiar.</p></li>
-            <li><img src="views/images/project-webperf.png" alt="Mobile devices"><a href="project-mobile.html">Mobile
-                Web Development</a>
-                <p>Making mobile apps isn't so hard after all.</p></li>
-            <li><img style="width:100px;" src="views/images/pizzeria.png" alt="Tbe best pizzeria picture"><a
-                    href="views/pizza.html">Cam's Pizzeria</a>
-                <p>Who wants a performant pizza?</p></li>
-        </ul>
-    </div>
-    <footer><p>&copy; Web Performance 2014 <span id="crp-stats"></span></p></footer>
-</div>
-<script async>(function (w, g) {
-    w['GoogleAnalyticsObject'] = g;
-    w[g] = w[g] || function () {
-        (w[g].q = w[g].q || []).push(arguments)
-    };
-    w[g].l = 1 * new Date();
-})(window, 'ga');
-ga('create', 'UA-XXXX-Y');
-ga('send', 'pageview');</script>
-<script async src="views/js/http_www.google-analytics.com_analytics.js"></script>
-</body>
-</html>
+</style>
