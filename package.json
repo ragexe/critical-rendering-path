@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/yankouskia/critical-rendering-path#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
     "http-server": "^0.10.0",
     "psi-local": "^1.0.0"
   }
